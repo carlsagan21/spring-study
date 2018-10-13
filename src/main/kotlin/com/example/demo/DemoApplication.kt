@@ -1,6 +1,7 @@
 package com.example.demo
 
 import org.springframework.boot.Banner
+import org.springframework.boot.WebApplicationType
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -10,7 +11,9 @@ class DemoApplication
 fun main(args: Array<String>) {
     runApplication<DemoApplication>(*args) {
         // customization
-         setBannerMode(Banner.Mode.OFF)
+        setBannerMode(Banner.Mode.OFF)
+        // addListeners()
+        webApplicationType = WebApplicationType.NONE
     }
 
 }
