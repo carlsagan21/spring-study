@@ -62,6 +62,7 @@ dependencies {
     testImplementation('org.junit.jupiter:junit-jupiter-api')
 
     testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine')
+    testRuntimeOnly('org.junit.vintage:junit-vintage-engine:5.1.1')
 
     // undertow
 //    implementation('org.springframework.boot:spring-boot-starter-undertow')
