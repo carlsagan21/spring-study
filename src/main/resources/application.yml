@@ -6,3 +6,9 @@ server:
   port: 0
   compression:
     enabled: true
+
+sookiwi:
+  name: Soo
+  age: ${random.int(1,100)}
+  full-name: ${sookiwi.name} Kim
+  session-timeout: 25s
