@@ -3,11 +3,20 @@ spring:
     web-application-type: none
   profiles:
     active: test
+  output:
+    ansi:
+      enabled: always
 
 server:
   port: 0
   compression:
     enabled: true
+
+#logging:
+#  file: filename
+#  path: logs # directory
+#  level:
+#    com.example.demo: debug
 
 sookiwi:
   name: Soo

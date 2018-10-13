@@ -1,5 +1,6 @@
 package com.example.demo
 
+import org.slf4j.LoggerFactory
 import org.springframework.boot.ApplicationArguments
 import org.springframework.boot.ApplicationRunner
 import org.springframework.boot.context.event.ApplicationStartedEvent
@@ -23,19 +24,21 @@ class AppRunner(
     private val configurationString: String
 ) : ApplicationRunner {
 
+    private val logger = LoggerFactory.getLogger(AppRunner::class.java)
+
     override fun run(args: ApplicationArguments?) {
-        println("ApplicationRunner")
-        println(args)
+        logger.debug("ApplicationRunner")
+        logger.debug(args?.toString())
 //        To get platform type. https://kotlinlang.org/docs/reference/java-interop.html
 //        @NotNull or @NotEmpty is used to avoid null
 //        val name: String? = sookiwiProperties.name
 //        val age: Int? = sookiwiProperties.age
 //        val fullName: String? = sookiwiProperties.fullName
 //        val sessionTimeout: Duration? = sookiwiProperties.sessionTimeout
-        println(sookiwiProperties.name)
+        logger.debug(sookiwiProperties.name)
 //        println(sookiwiProperties.age)
 //        println(sookiwiProperties.fullName)
 //        println(sookiwiProperties.sessionTimeout)
-        println(configurationString)
+        logger.debug(configurationString)
     }
 }
