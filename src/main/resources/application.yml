@@ -6,3 +6,9 @@ server:
   port: 0
   compression:
     enabled: true
+
+blog:
+  title: Blog
+  banner:
+    title: Warning
+    content: The blog will be down tomorrow.
