@@ -13,14 +13,13 @@ class AppListener : ApplicationListener<ApplicationStartedEvent> {
     override fun onApplicationEvent(event: ApplicationStartedEvent) {
         println("ApplicationStartedEvent")
     }
-
 }
 
 @Component
 @Order(1)
 class AppRunner(
-//        @Value("\${sookiwi.name}") private val name: String? = null,
-        private val sookiwiProperties: SookiwiProperties
+//    @Value("\${sookiwi.name}") private val name: String? = null,
+    private val sookiwiProperties: SookiwiProperties
 ) : ApplicationRunner {
 
     override fun run(args: ApplicationArguments?) {
@@ -37,5 +36,4 @@ class AppRunner(
         println(sookiwiProperties.fullName)
         println(sookiwiProperties.sessionTimeout)
     }
-
 }

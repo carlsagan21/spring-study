@@ -13,7 +13,6 @@ import java.time.Duration;
 @ConfigurationProperties("sookiwi")
 @Validated
 public class SookiwiProperties {
-
     @NotEmpty
     private String name;
     @NotNull

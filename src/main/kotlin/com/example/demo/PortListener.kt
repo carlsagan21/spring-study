@@ -4,7 +4,6 @@ import org.springframework.boot.web.servlet.context.ServletWebServerInitializedE
 import org.springframework.context.ApplicationListener
 import org.springframework.stereotype.Component
 
-
 @Component
 class PortListener : ApplicationListener<ServletWebServerInitializedEvent> {
     override fun onApplicationEvent(event: ServletWebServerInitializedEvent) {

@@ -13,5 +13,4 @@ fun main(args: Array<String>) {
 //        addListeners()
 //        webApplicationType = WebApplicationType.NONE
     }
-
 }
