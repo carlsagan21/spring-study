@@ -1,0 +1,5 @@
+sookiwi:
+  name: Profile Prod Soo
+spring:
+  profiles:
+    include: proddb
