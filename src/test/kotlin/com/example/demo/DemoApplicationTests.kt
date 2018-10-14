@@ -15,10 +15,13 @@ import org.springframework.test.context.junit.jupiter.SpringExtension
 //        properties = ["sookiwi.name=TestSoo"]
 )
 @SpringBootTest
-class DemoApplicationTests(@Autowired private val environment: Environment) {
+class DemoApplicationTests(
+    @Autowired private val environment: Environment
+) {
+
     @Test
     fun contextLoads() {
         assertThat(environment.getProperty("sookiwi.name"))
-            .isEqualTo("TestSoo")
+            .isEqualTo("Test Soo")
     }
 }

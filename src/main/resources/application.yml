@@ -1,8 +1,8 @@
 spring:
-  main:
-    web-application-type: none
+  #  main:
+  #    web-application-type: none
   profiles:
-    active: test
+    active: prod
   output:
     ansi:
       enabled: always

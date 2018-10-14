@@ -20,7 +20,7 @@ class AppListener : ApplicationListener<ApplicationStartedEvent> {
 @Order(1)
 class AppRunner(
 //    @Value("\${sookiwi.name}") private val name: String? = null,
-    private val sookiwiProperties: SookiwiProperties,
+//    private val sookiwiProperties: SookiwiProperties,
     private val configurationString: String
 ) : ApplicationRunner {
 
@@ -35,7 +35,7 @@ class AppRunner(
 //        val age: Int? = sookiwiProperties.age
 //        val fullName: String? = sookiwiProperties.fullName
 //        val sessionTimeout: Duration? = sookiwiProperties.sessionTimeout
-        logger.debug(sookiwiProperties.name)
+//        logger.debug(sookiwiProperties.name)
 //        println(sookiwiProperties.age)
 //        println(sookiwiProperties.fullName)
 //        println(sookiwiProperties.sessionTimeout)
